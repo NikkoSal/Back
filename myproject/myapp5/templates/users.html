@@ -1,0 +1,11 @@
+<ul>
+    {% for user in users %}
+        <li>
+            {{ user.username }} -
+            <a href="{% url 'view_user' user.id %}">VIEW</a> |
+            <a href="{% url 'edit_user' user.id %}">EDIT</a> |
+            <a href="{% url 'delete_user' user.id %}">DELETE</a> |
+            <a href="{% url 'add_user' %}">ADD NEW</a>
+        </li>
+    {% endfor %}
+</ul>

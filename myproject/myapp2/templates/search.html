@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ru">
+<body>
+    <form method="get" action="{% url 'get' %}">
+        <label for="search">request</label>
+        <input type="text" name="q" id="search" placeholder="Поиск">
+        <button type="submit">search</button>
+    </form>
+
+    {% if query %}
+        <h2>searched: {{ query }}</h2>
+    {% endif %}
+</body>
+</html>

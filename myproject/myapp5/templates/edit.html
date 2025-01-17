@@ -1,0 +1,14 @@
+<form method="post">
+    {% csrf_token %}
+    <label for="username">NAME:</label>
+    <input type="text" id="username" name="username" value="{{ user.username|default:'' }}" required>
+    <br>
+    <label for="password">PASSWORD:</label>
+    <input type="password" id="password" name="password">
+    <br>
+    <button type="submit">{% if user %}SAVE{% else %}CREATE{% endif %}</button>
+</form>
+<a href="{% url 'users' %}">BACK</a>
+{% if error %}
+    <p>{{ error }}</p>
+{% endif %}
