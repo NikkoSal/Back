@@ -1,8 +1,7 @@
+from django.contrib import admin
 from django.urls import path
-from . import views
-
+from .views import proxy_request
 
 urlpatterns = [
-    path('', views.home, name='home'),
-    path('<path:subpath>', views.proxy, name='proxy'),
+    path('proxy/', proxy_request, name='proxy_request'),
 ]

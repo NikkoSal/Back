@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'myapp3',
     'myapp4',
     'myapp5',
+    'myapp6',
 ]
 
 LOGIN_URL = '/myapp4/login/'

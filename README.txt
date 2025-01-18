@@ -3,4 +3,4 @@ TASK 2 - myapp2
 TASK 3 - myapp3
 TASK 4 - myapp4(сделал как смог)
 TASK 5 - myapp5
-TASK 6 - geteway
+TASK 6 - myapp6 + gatewayProject
