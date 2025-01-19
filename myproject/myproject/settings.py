@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'myapp4',
     'myapp5',
     'myapp6',
+    'myapp7',
 ]
 
 LOGIN_URL = '/myapp4/login/'
@@ -130,3 +131,18 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = 'myapp4.User'
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+EMAIL_HOST = 'smtp.mail.ru'
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
+EMAIL_HOST_USER = 'gamebot202@mail.ru'
+EMAIL_HOST_PASSWORD = 'g49MqUk5k9zpfnM0Qe'
+
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+SERVER_EMAIL = EMAIL_HOST_USER
+EMAIL_ADMIN = EMAIL_HOST_USER

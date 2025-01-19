@@ -1,9 +1,8 @@
 import requests
 from django.http import HttpResponse
 
-
+url = "http://127.0.0.1:8000/myapp6/"
 def proxy_request(request):
-    url = "http://127.0.0.1:8000/myapp6/"
 
     response = requests.get(url)
 
